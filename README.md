@@ -15,11 +15,11 @@ This site is ready to publish from the root of a GitHub repository.
 Recommended personal-site repository name:
 
 ```bash
-kanchan-cmyk.github.io
+mhatrekanchan01.github.io
 ```
 
 After pushing the repository to GitHub, GitHub Pages should serve it at:
 
 ```text
-https://kanchan-cmyk.github.io/
+https://mhatrekanchan01.github.io/
 ```
