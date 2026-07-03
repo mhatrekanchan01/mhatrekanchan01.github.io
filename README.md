@@ -1,12 +1,13 @@
-# Kanchan Mhatre Personal Website
+# Kanchan Mhatre HR Portfolio
 
-A lightweight personal website built for GitHub Pages.
+A lightweight GitHub Pages website for HRBP, People Operations, and HR Manager job applications.
 
 ## Edit
 
-- Update `index.html` with your real bio, projects, LinkedIn URL, and links.
+- Update `index.html` with new experience, links, insights, and contact details.
 - Replace `assets/hero-workspace.png` if you want a different hero image.
 - Adjust colors and spacing in `styles.css`.
+- Keep private resume files and extracted notes out of the repository.
 
 ## Publish with GitHub Pages
 
