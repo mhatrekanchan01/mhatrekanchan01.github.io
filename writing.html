@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Writing by Kanchan Mhatre on HR operations, AI-enabled workflows, documentation, and distributed employee connection.">
+    <title>Writing | Kanchan Mhatre, PHR</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Kanchan Mhatre home">KM</a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a aria-current="page" href="writing.html">Writing</a>
+        <a href="toolkit.html">Toolkit</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="page-hero">
+        <p class="eyebrow">Writing</p>
+        <h1>Practical reflections from HR operations work.</h1>
+        <p>
+          Real examples and lessons from distributed HR support, documentation,
+          workflows, and responsible use of tools in people operations.
+        </p>
+      </section>
+
+      <article class="section blog-post" id="slack-zapier">
+        <div class="blog-kicker">
+          <span>HR Operations</span>
+          <time datetime="2026-06-18">June 18, 2026</time>
+        </div>
+        <h2>How I used Slack and Zapier to stay connected with employees across three continents</h2>
+        <p>Supporting employees across three continents means connection cannot depend only on scheduled meetings. I had regular check-ins every few weeks or roughly once a month, but I noticed a familiar HR problem: after a good conversation, there could be silence in between.</p>
+        <p>I wanted employees to remember that HR was accessible, friendly, and easy to reach before something became urgent. Since our teams already used Slack, I started thinking about how to create lightweight touchpoints without turning them into another manual task.</p>
+        <p>The idea was simple: use Slack IDs, track when I last connected with each person, and send a friendly check-in when enough time had passed. If it had been around 20 days since the last touchpoint, the workflow would send a short message like, "Hey, how is work feeling this week?" The message could vary so it did not feel robotic or repetitive.</p>
+        <p>I first tried building it in n8n, but it felt heavier and more complex than the problem required. I moved to Zapier, built the workflow there, and connected the logic to Slack. The workflow now helps me maintain a steady rhythm of connection while my scheduled calls continue as usual.</p>
+        <p>The best part is that people respond. The messages keep HR present in their recent chats, and employees are more likely to reach out quickly because I am not only someone they meet on a calendar. I am already in the flow of where they work.</p>
+        <p>To me, this is the value of AI-minded HR operations: not replacing human connection, but designing small systems that protect it. A thoughtful workflow can make HR feel more available, more consistent, and more human.</p>
+      </article>
+
+      <article class="section blog-post" id="ai-sops">
+        <div class="blog-kicker">
+          <span>Documentation</span>
+          <time datetime="2026-04-09">April 9, 2026</time>
+        </div>
+        <h2>From scattered notes to SOPs: how AI helps me organize HR work</h2>
+        <p>A lot of HR process knowledge starts in messy places: meeting notes, Slack threads, email follow-ups, repeated employee questions, vendor instructions, policy references, and the small reminders people keep in their heads because the process has not been written down clearly yet.</p>
+        <p>That is where I find AI useful. Not to decide what the HR process should be, and not to replace judgment, but to help me move faster from scattered inputs to a usable structure. I can take rough notes and ask AI to help organize them into sections like purpose, owner, trigger, steps, exceptions, templates, escalation points, and follow-up rhythm.</p>
+        <p>The first draft is never the final answer. HR still has to review the language, check it against policy, make sure the steps match the actual systems, remove anything sensitive, and confirm that the document is practical for the people who will use it. But the blank page is often the slowest part, and AI helps me get past that faster.</p>
+        <p>I especially like using AI when a process has grown informally over time. If three people explain the same workflow slightly differently, AI can help me spot the common structure and the gaps: where ownership is unclear, where a handoff is missing, where the employee communication needs a template, or where a tracker would prevent repeated follow-ups.</p>
+        <p>Good HR documentation is not about making everything rigid. It is about making work easier to repeat, easier to audit, and easier to hand off. A strong SOP gives people confidence: employees know what to expect, managers know what HR needs from them, and HR can respond more consistently without rebuilding the process from memory each time.</p>
+        <p>To me, this is one of the most practical uses of AI in HR operations. It helps convert messy working knowledge into clearer documentation, while the HR professional remains responsible for accuracy, tone, compliance, and judgment.</p>
+      </article>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Next Topics</p>
+          <h2>Ideas I would like to develop next.</h2>
+        </div>
+        <div class="article-list">
+          <div class="article-link muted-link"><span>Employee Experience</span><strong>Designing onboarding that feels clear, humane, and accountable</strong></div>
+          <div class="article-link muted-link"><span>HR Operations</span><strong>How dashboards can reduce follow-up noise without losing the human context</strong></div>
+          <div class="article-link muted-link"><span>Core HR</span><strong>What high-volume HR support taught me about consistency</strong></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Kanchan Mhatre, PHR. Built with GitHub Pages and Codex.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
