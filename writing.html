@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Writing by Kanchan Mhatre on HR operations, AI-enabled workflows, documentation, and distributed employee connection.">
-    <title>Writing | Kanchan Mhatre, PHR</title>
+    <meta name="description" content="Practical People Ops notes by Kanchan Mhatre on HR operations, dashboards, workflow automation, analysis, and vendor data reconciliation.">
+    <title>Writing | Practical People Ops Notes</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -12,11 +12,9 @@
       <a class="brand" href="index.html" aria-label="Kanchan Mhatre home">KM</a>
       <nav aria-label="Primary navigation">
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="experience.html">Experience</a>
-        <a href="case-studies.html">Case Studies</a>
+        <a href="case-studies.html">Work / Case Studies</a>
         <a aria-current="page" href="writing.html">Writing</a>
-        <a href="toolkit.html">Toolkit</a>
+        <a href="experience.html">Experience</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
@@ -24,52 +22,74 @@
     <main class="page">
       <section class="page-hero">
         <p class="eyebrow">Writing</p>
-        <h1>Practical reflections from HR operations work.</h1>
+        <h1>Practical People Ops notes.</h1>
         <p>
-          Real examples and lessons from distributed HR support, documentation,
-          workflows, and responsible use of tools in people operations.
+          Short, experience-based posts about HR operations, dashboards, workflow
+          design, documentation, and turning messy work into usable systems.
         </p>
       </section>
 
-      <article class="section blog-post" id="slack-zapier">
-        <div class="blog-kicker">
-          <span>HR Operations</span>
-          <time datetime="2026-06-18">June 18, 2026</time>
-        </div>
-        <h2>How I used Slack and Zapier to stay connected with employees across three continents</h2>
-        <p>Supporting employees across three continents means connection cannot depend only on scheduled meetings. I had regular check-ins every few weeks or roughly once a month, but I noticed a familiar HR problem: after a good conversation, there could be silence in between.</p>
-        <p>I wanted employees to remember that HR was accessible, friendly, and easy to reach before something became urgent. Since our teams already used Slack, I started thinking about how to create lightweight touchpoints without turning them into another manual task.</p>
-        <p>The idea was simple: use Slack IDs, track when I last connected with each person, and send a friendly check-in when enough time had passed. If it had been around 20 days since the last touchpoint, the workflow would send a short message like, "Hey, how is work feeling this week?" The message could vary so it did not feel robotic or repetitive.</p>
-        <p>I first tried building it in n8n, but it felt heavier and more complex than the problem required. I moved to Zapier, built the workflow there, and connected the logic to Slack. The workflow now helps me maintain a steady rhythm of connection while my scheduled calls continue as usual.</p>
-        <p>The best part is that people respond. The messages keep HR present in their recent chats, and employees are more likely to reach out quickly because I am not only someone they meet on a calendar. I am already in the flow of where they work.</p>
-        <p>To me, this is the value of AI-minded HR operations: not replacing human connection, but designing small systems that protect it. A thoughtful workflow can make HR feel more available, more consistent, and more human.</p>
+      <article class="section blog-post" id="slack-zapier-bot">
+        <div class="blog-kicker"><span>Workflow Automation</span><time datetime="2026-06-18">June 18, 2026</time></div>
+        <h2>What I Learned Building a Slack + Zapier HR Check-in Bot</h2>
+        <p class="excerpt">A small automation does not need to replace HR judgment. Sometimes the best use of automation is simply making sure the right conversation happens at the right time.</p>
+        <p>In HR, a lot of important work fails not because people do not care, but because the process depends too much on memory. Someone has to remember who needs a check-in, when the last conversation happened, what was discussed, and what needs follow-up.</p>
+        <p>That works for a small group for a short period of time. It does not scale well when teams are distributed, calendars are full, and HR is handling multiple regions.</p>
+        <p>I built a simple Slack + Zapier workflow to solve this kind of problem. The goal was not to make the employee experience robotic. The goal was to make the operational layer more reliable.</p>
+        <p>The workflow helped trigger check-in nudges, capture responses, and create better visibility into follow-ups. Instead of manually remembering every touchpoint, the system created a basic rhythm. HR could then spend more time on the actual judgment: reading the response, spotting patterns, and deciding what needed attention.</p>
+        <p>The biggest lesson was that useful HR automation does not need to be complex. It just needs to remove the repeated manual step that creates inconsistency.</p>
+        <p>This kind of workflow is also a good example of where HR teams can use automation without losing the human part of the work. The bot does not replace the conversation. It protects the process around the conversation.</p>
+        <h3>What I would improve next</h3>
+        <ul class="clean-list">
+          <li>Add cleaner status tracking</li>
+          <li>Create a better manager summary view</li>
+          <li>Add tags for recurring themes</li>
+          <li>Connect check-in responses to a dashboard</li>
+          <li>Build escalation logic for items that need follow-up</li>
+        </ul>
+        <p><strong>The takeaway:</strong> HR automation works best when it supports consistency, not when it tries to replace context.</p>
       </article>
 
-      <article class="section blog-post" id="ai-sops">
-        <div class="blog-kicker">
-          <span>Documentation</span>
-          <time datetime="2026-04-09">April 9, 2026</time>
-        </div>
-        <h2>From scattered notes to SOPs: how AI helps me organize HR work</h2>
-        <p>A lot of HR process knowledge starts in messy places: meeting notes, Slack threads, email follow-ups, repeated employee questions, vendor instructions, policy references, and the small reminders people keep in their heads because the process has not been written down clearly yet.</p>
-        <p>That is where I find AI useful. Not to decide what the HR process should be, and not to replace judgment, but to help me move faster from scattered inputs to a usable structure. I can take rough notes and ask AI to help organize them into sections like purpose, owner, trigger, steps, exceptions, templates, escalation points, and follow-up rhythm.</p>
-        <p>The first draft is never the final answer. HR still has to review the language, check it against policy, make sure the steps match the actual systems, remove anything sensitive, and confirm that the document is practical for the people who will use it. But the blank page is often the slowest part, and AI helps me get past that faster.</p>
-        <p>I especially like using AI when a process has grown informally over time. If three people explain the same workflow slightly differently, AI can help me spot the common structure and the gaps: where ownership is unclear, where a handoff is missing, where the employee communication needs a template, or where a tracker would prevent repeated follow-ups.</p>
-        <p>Good HR documentation is not about making everything rigid. It is about making work easier to repeat, easier to audit, and easier to hand off. A strong SOP gives people confidence: employees know what to expect, managers know what HR needs from them, and HR can respond more consistently without rebuilding the process from memory each time.</p>
-        <p>To me, this is one of the most practical uses of AI in HR operations. It helps convert messy working knowledge into clearer documentation, while the HR professional remains responsible for accuracy, tone, compliance, and judgment.</p>
+      <article class="section blog-post" id="regional-signals">
+        <div class="blog-kicker"><span>Dashboards</span><time datetime="2026-05-22">May 22, 2026</time></div>
+        <h2>Dashboards Beat Memory: Turning Employee Check-ins into Regional Signals</h2>
+        <p class="excerpt">Employee check-ins create a lot of useful information, but without structure, the insights disappear into notes.</p>
+        <p>One of the problems with employee check-ins is that they create a lot of valuable but unstructured information. Someone mentions workload concerns. Someone else talks about manager communication. Another person flags confusion around career growth. Individually, each conversation may seem small. Collectively, they can reveal the health of a team.</p>
+        <p>The challenge is that HR notes are often not built for pattern recognition. They are written for the moment, not for future reporting.</p>
+        <p>I started building a structured check-in tracker to solve this. The idea was simple: every check-in should leave behind usable signals. Not just a paragraph of notes, but fields that can later be filtered, summarized, and reviewed.</p>
+        <p>The tracker included sentiment, key themes, follow-up items, watch areas, region/team view, last connect date, action owner, and summary notes.</p>
+        <p>This changed the value of the check-in process. Instead of relying on memory, I could look at the data and ask better questions: which themes are repeating, which employees have not had a recent touchpoint, which items are open, which teams may need attention, and what should be summarized upward.</p>
+        <p>This is where HR operations and structured people support overlap in a useful way. The human conversation still matters, but the system makes the information easier to use.</p>
+        <p>The biggest lesson was that a dashboard does not need to be fancy to be useful. A well-structured spreadsheet can be enough if it helps HR move from scattered notes to visible signals.</p>
+        <p><strong>The takeaway:</strong> If the work matters, it needs a system. Otherwise, it becomes memory-based HR.</p>
       </article>
 
-      <section class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Next Topics</p>
-          <h2>Ideas I would like to develop next.</h2>
-        </div>
-        <div class="article-list">
-          <div class="article-link muted-link"><span>Employee Experience</span><strong>Designing onboarding that feels clear, humane, and accountable</strong></div>
-          <div class="article-link muted-link"><span>HR Operations</span><strong>How dashboards can reduce follow-up noise without losing the human context</strong></div>
-          <div class="article-link muted-link"><span>Core HR</span><strong>What high-volume HR support taught me about consistency</strong></div>
-        </div>
-      </section>
+      <article class="section blog-post" id="meal-budget-analysis">
+        <div class="blog-kicker"><span>Decision-ready Analysis</span><time datetime="2026-04-16">April 16, 2026</time></div>
+        <h2>A Small Meal Budget Analysis That Made the Decision Obvious</h2>
+        <p class="excerpt">Not every People Ops analysis needs to be complex. Sometimes a small spreadsheet is enough to make a better decision.</p>
+        <p>A meal stipend issue can sound minor until it becomes a repeated employee experience problem. Employees were frequently paying out of pocket for office meal orders, but before recommending a change, I wanted to understand the actual data.</p>
+        <p>The current office meal budget was $20. I reviewed 82 DoorDash orders over a three-month period to see how often employees were exceeding that amount.</p>
+        <p>The numbers made the issue clear: the average order value was $25.02, 73 out of 82 orders were above the $20 budget, 89% of orders required some employee top-up, the average employee top-up was $5.25, and total employee out-of-pocket amount was $430.46.</p>
+        <p>I then modeled what would happen if the budget increased to $25. Out-of-pocket orders would drop from 89% to 44%, total employee out-of-pocket amount would reduce from $430.46 to $155.06, and the estimated incremental annual company cost was approximately $1,102.</p>
+        <p>This made the decision easier to discuss. Instead of saying “employees are unhappy with the lunch budget,” the recommendation could be framed with numbers: here is the current employee impact, here is the proposed change, and here is the estimated cost.</p>
+        <p>The analysis was not complicated. That was the point. People Ops teams do not always need advanced analytics to make better decisions. Often, they need clean data, a clear comparison, and a practical recommendation.</p>
+        <p><strong>The takeaway:</strong> Small operational data points can be powerful when they are translated into decision-ready language.</p>
+      </article>
+
+      <article class="section blog-post" id="vendor-data">
+        <div class="blog-kicker"><span>Vendor Operations</span><time datetime="2026-03-12">March 12, 2026</time></div>
+        <h2>The HR Work No One Sees: Making Vendor Data Trustworthy</h2>
+        <p class="excerpt">A lot of HR operations work is invisible until something goes wrong. Vendor data reconciliation is one of those areas.</p>
+        <p>Some of the hardest HR operations work is not flashy. It is the work of making sure the data is right before anyone sends an answer.</p>
+        <p>This shows up often in multi-country HR operations. An employee sees one leave balance in the HRIS. A vendor or EOR has another calculation. A local rule affects carryover or expiry. A manager wants a quick answer. The employee wants clarity. HR has to make sense of all of it.</p>
+        <p>The real work is not just checking a number. It is understanding the logic behind the number.</p>
+        <p>For leave balances, that can mean looking at original entitlement, accruals, carryover, expiry rules, utilization, adjustments, HRIS history, and vendor source-of-truth calculations.</p>
+        <p>Once the numbers are reconciled, the next challenge is communication. Employees do not need a confusing internal audit trail. They need a clear explanation of how the balance was calculated and which system is considered the source of truth.</p>
+        <p>This kind of work has taught me that HR operations needs both detail orientation and translation skills. It is not enough to be correct internally. The answer also has to be understandable.</p>
+        <p>It also showed me why process documentation matters. If each case is solved from scratch, HR becomes slow and inconsistent. But if the logic is documented, future questions become easier to handle.</p>
+        <p><strong>The takeaway:</strong> Good HR operations is often invisible. But when the systems, data, and explanations are clean, everything downstream works better.</p>
+      </article>
     </main>
 
     <footer>

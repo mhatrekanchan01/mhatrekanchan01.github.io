@@ -277,7 +277,7 @@ h3 {
 }
 
 .card-grid,
-.case-columns,
+.case-grid,
 .tool-grid {
   display: grid;
   gap: 1rem;
@@ -288,12 +288,20 @@ h3 {
 }
 
 .card-grid.three,
-.case-columns,
 .tool-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.card-grid.five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.case-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .card,
+.case-grid article,
 .tool-group {
   min-height: 260px;
   padding: 1.35rem;
@@ -304,6 +312,7 @@ h3 {
 }
 
 .card p,
+.case-grid p,
 .tool-group p {
   margin: 1rem 0 0;
   color: var(--muted);
@@ -408,26 +417,13 @@ h3 {
   margin-top: 0.65rem;
 }
 
-.case-detail {
+.case-study {
   border-top: 1px solid var(--line);
 }
 
-.case-detail h2 {
+.case-study h2 {
   max-width: 920px;
   margin-bottom: 1.6rem;
-}
-
-.case-columns > div {
-  min-height: 230px;
-  padding: 1.25rem;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-}
-
-.case-columns p {
-  margin: 0.85rem 0 0;
-  color: var(--muted);
 }
 
 .blog-post {
@@ -462,6 +458,12 @@ h3 {
   margin: 1.1rem 0 0;
   color: #405053;
   font-size: 1.08rem;
+}
+
+.blog-post .excerpt {
+  color: #314044;
+  font-size: 1.2rem;
+  font-weight: 650;
 }
 
 .pill-list {
@@ -512,7 +514,8 @@ footer p {
   .stats,
   .card-grid,
   .card-grid.three,
-  .case-columns,
+  .card-grid.five,
+  .case-grid,
   .tool-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -546,7 +549,8 @@ footer p {
   .stats,
   .card-grid,
   .card-grid.three,
-  .case-columns,
+  .card-grid.five,
+  .case-grid,
   .tool-grid {
     grid-template-columns: 1fr;
   }
